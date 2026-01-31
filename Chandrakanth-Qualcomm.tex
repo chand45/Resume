@@ -1,0 +1,193 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Chandrakanth Reddy Gaddam}
+\newcommand{\yourEmail}{chandrakanth45ece@gmail.com}
+\newcommand{\yourPhone}{8897388453}
+\newcommand{\githubUserName}{chand45}
+\newcommand{\linkedInUserName}{chandrakanth45}
+
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsite}{\Large \yourName}} & 
+%     Email : \href{mailto:\yourEmail}{\yourEmail}
+%     \\
+%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
+%     Mobile : \yourPhone
+%     \\
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsite}{abdullaharif.tech}
+%     \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape \yourName} \\ \vspace{1pt}
+    \small \yourPhone $|$ \href{mailto:\yourEmail}{\underline{\yourEmail}} $|$ 
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}}
+\end{center}
+
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Swap degree and school if your school is reputable
+\educationHeading{B.Tech in Electronics and Communication Engineering}{Maulana Azad National Institute of Technology}{Bhopal}{Jun 2023}
+\\*{GPA: 8.84 }
+
+\sectionsep
+
+%--------------------------------------------------------------
+%     Work Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+
+\Project{Software Engineer}{https://learn.microsoft.com/en-us/azure/azure-impact-reporting/azure-monitor-connector}
+\educationHeading{}{Microsoft}{Azure Compute}{Jun 2022}
+\\*
+\begin{tightemize}
+    \item Developed an \textbf{Azure Function} that reads alerts generated in the customer's azure subscription and reports them as incidents to relevant teams in azure.
+    \item The information is then collected from these teams and presented to customers in the azure portal.
+    \item Contributed to a platform in Azure that focused on recreating customer issues by creating and running reference workloads.
+    
+\end{tightemize}
+
+% Swap degree and school if your school is reputable
+\Project{Software Engineer Intern}{https://drive.google.com/file/d/1cY0atqSP0_z6WjAedGmJ1Damt0zBSSeF/view?usp=sharing}
+\educationHeading{}{Microsoft}{Azure Backup}{Jun 2022}
+\\*
+\begin{tightemize}
+    \item Worked on auto-disabling Backup for ransomware-affected VMs and securing existing backups.
+    \item Processing data and visualizing it to assess customers' current security posture and provide recommendations.
+    
+\end{tightemize}
+% \courseWork{Data Structures and Algorithms; Operating Systems;  Computer Security; Software Testing; Advanced Networking; Big Data Analytics}
+\sectionsep
+% \begin{tightemize}
+    % \item Wrote articles related to various topics from Maths, Physics and % Chemistry
+    % \item Wrote solutions to JEE mains and advanced questions
+  %   
+% \end{tightemize}
+
+\section{Projects}
+
+\Project{LLM Finetuning For Spam Detection}{https://github.com/chand45/GPT2-Finetuning-for-Spam-Detection}
+\descript{Transformer, Self Attention, PyTorch}
+\begin{tightemize}
+    \item Loaded pre-trained weights from OpenAI into a GPT2 model built from scratch.
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    \item The final layer for the prediction of the next word is replaced with a custom binary classification head.
+    \item Keeping all other weights constant, final layer is then trained for spam detection.
+\end{tightemize}
+\sectionsep
+
+\Project{GitHub Copilot to Report Azure Incidents}{https://github.com/chand45/MCP-Server-Azure-Impact-Reporting}
+\descript{Model Context Protocol (MCP)}
+\begin{tightemize}
+    \item Built an MCP server that enables LLMs to report impacts to Azure resources.
+    \item This eliminates the need to manually raise tickets in Azure.
+\end{tightemize}
+\sectionsep
+
+\Project{Restaurant Chatbot}{https://github.com/chand45/Restaurant-Chatbot}
+\descript{Artificial Neural Networks (ANN), PyTorch, NLP}
+\begin{tightemize}
+    \item Built a chatbot to answer FAQs in a restaurant.
+\end{tightemize}
+\sectionsep
+%
+\Project{Image Classification}{https://github.com/chand45/Image-Classification-Using-CNN}
+\descript{Convolutional Neural Networks (CNN), PyTorch, NumPy}
+\begin{tightemize}
+    \item Implemented image classification model on Cifar10 dataset which has 6000 images of 10 categories. 
+\end{tightemize}
+\sectionsep
+  
+%\Project{Movie Review Classification}{https://github.com/chand45/Movie-Review-Classification}
+%\descript{Natural Language Processing (NLP), NumPy}%\hfill 
+%\begin{tightemize}
+    %%\item Implemented a \textbf{Simple Word Embedding Model (SWEM)} which performs \textbf{sentiment analysis} on the movie reviews.
+   % \item Word embeddings are directly taken from the h5Py library of Python.
+   % \item Number of examples in the dataset are 1411 which is divided into %\textbf{1128 training samples} and  \textbf{283 test samples}
+   % \item Accuracy of model on the test samples was \textbf{95\%}
+%\end{tightemize}
+\sectionsep
+
+ 
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{resumeSkillList}
+    \singleItem{\textbf{Programming Languages:}}{C++, C\#, Python, SQL}
+    \\ 
+    \singleItem{\textbf{Core CS Fundamentals:}}{Problem-solving, Data Structures, Algorithms, Object Oriented Programming, Computer Networking, DBMS}
+    \\
+    \singleItem{\textbf{Cloud \& Devops:}}{Cloud Computing with Azure, Azure Devops, Azure Kubernetes Service, Docker}
+    \\
+    \singleItem{\textbf{AI \& Machine Learning:}}{Artifical Neural Networks, Convolutional Neural Networks, LLMs - Pretraining and Finetuning, Agentic AI,}
+    \\
+    \singleItem{}{Model Context Protocol (MCP), Azure Machine learning, Azure OpenAI }
+    \\
+\end{resumeSkillList}
+
+ % A more concise alternate 
+% \begin{resumeSkillList}
+%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{resumeSkillList}
+\sectionsep
+%--------------------------------------------------------------
+%     Achievements and course works
+%--------------------------------------------------------------
+%  \section{Achievements}
+% %\resumeHeading{Amazon}{Software Development Engineer Intern}{Toronto, ON}{May 2020 – Aug %2020}
+% \begin{tightemize}
+%     \item Ranked \textbf{7/107} in a contest organized by Zenith-coding club of MANIT.
+%     \item \textbf{6 star Problem solver} on HackerRank.
+%     %\item Secured \textbf{Global Rank 950/11074} in LeetCode BiWeekly contest 63.
+%     \item solved over \textbf{1000 problems on LeetCode, Geeks for Geeks}.
+%     %\item Selected as \textbf{Content developer intern at speedlabs}, in first year of college.\href{https://drive.google.com/file/d/1pruE9ZmFNl3kUrKUc4Rd3lf8VvxioFA5/view?usp=sharing}{LINK}
+% \end{tightemize}
+% \sectionsep
+%--------------------------------------------------------------
+%     Competitive Coding Profile.
+%--------------------------------------------------------------
+\section{Competitive Coding Profile}
+\begin{itemize}
+    %\item Solved over \textbf{1000} problems on LeetCode and GeeksforGeeks
+    %\item \href{https://auth.geeksforgeeks.org/user/chand17/practice/}{\underline{GeeksforGeeks}} 
+    %\item \href{https://leetcode.com/kanthreddygaddamchandra/}{\underline{LeetCode}}
+    %\item \href{https://www.hackerrank.com/chandu_stinsfire}{\underline{HackerRank}}
+    %\item \href{https://codeforces.com/profile/chand_stinsy}{\underline{Codeforces}}
+    \item \href{https://leetcode.com/kanthreddygaddamchandra/}{\underline{LeetCode}} $\bullet$\href{https://auth.geeksforgeeks.org/user/chand17/practice/}{\underline{GeeksforGeeks}}  $\bullet$ \href{https://www.hackerrank.com/chandu_stinsfire}{\underline{HackerRank}}  $\bullet$  \href{https://codeforces.com/profile/chand_stinsy}{\underline{Codeforces}}
+    
+\end{itemize}
+
+\end{document}

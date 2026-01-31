@@ -1,0 +1,182 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Chandrakanth Reddy Gaddam}
+\newcommand{\yourEmail}{chandrakanth45ece@gmail.com}
+\newcommand{\yourPhone}{8897388453}
+\newcommand{\githubUserName}{chand45}
+\newcommand{\linkedInUserName}{chandrakanth45}
+
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsite}{\Large \yourName}} & 
+%     Email : \href{mailto:\yourEmail}{\yourEmail}
+%     \\
+%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
+%     Mobile : \yourPhone
+%     \\
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsite}{abdullaharif.tech}
+%     \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape \yourName} \\ \vspace{1pt}
+    \small \yourPhone $|$ \href{mailto:\yourEmail}{\underline{\yourEmail}} $|$ 
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}}
+\end{center}
+
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Swap degree and school if your school is reputable
+\educationHeading{B.Tech in Electronics and Communication Engineering}{Maulana Azad National Institute of Technology}{Bhopal}{Jun 2023}
+\\*{GPA: 8.92 (SEM 1-6) }
+\\*
+% \courseWork{Data Structures and Algorithms; Operating Systems;  Computer Security; Software Testing; Advanced Networking; Big Data Analytics}
+\educationHeading{Post Metric in Maths, Physics and Chemistry
+}{FIITJEE}{Hyderabad}{Jun 2019}
+\\*{JEE MAINS AIR: 12075}
+
+\sectionsep
+
+%--------------------------------------------------------------
+%     Work Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+% Swap degree and school if your school is reputable
+\Project{Software Engineer Intern}{https://drive.google.com/file/d/1cY0atqSP0_z6WjAedGmJ1Damt0zBSSeF/view?usp=sharing}
+\educationHeading{}{Microsoft}{Microsoft Azure Backup}{Jun 2022}
+\\*
+\begin{tightemize}
+    \item Got an understanding of \textbf{Cloud Computing} and various services offered by \textbf{azure}
+    \item My projects deals with remediation part of a ransomware security alert
+    \item As a part of remediation, I Worked on creating an application that checks if Backup was enabled for virtual machines.
+    \item Worked on automatically disabling Backup for ransomware affected Virtual Machines.
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    \item Worked on generating recommendations for best security practices
+    \item Worked on writing an \textbf{Azure Resource Graph} query, that gets all the data related to Backup vault properties
+    
+\end{tightemize}
+% \courseWork{Data Structures and Algorithms; Operating Systems;  Computer Security; Software Testing; Advanced Networking; Big Data Analytics}
+\sectionsep
+\Project{Subject Matter Expert}{https://drive.google.com/file/d/1pruE9ZmFNl3kUrKUc4Rd3lf8VvxioFA5/view?usp=sharing}
+\educationHeading{}{Speedlabs}{Mathematics, Physics}{Apr 2020}
+\sectionsep
+% \begin{tightemize}
+    % \item Wrote articles related to various topics from Maths, Physics and % Chemistry
+    % \item Wrote solutions to JEE mains and advanced questions
+  %   
+% \end{tightemize}
+
+
+\sectionsep
+
+\section{Projects}
+
+\Project{Restaurant Chatbot}{https://github.com/chand45/Restaurant-Chatbot}
+\descript{Artificial Neural Networks (ANN), PyTorch, NLP}
+\begin{tightemize}
+    \item Built a Chatbot to answer the FAQs in a restaurant.
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    \item Neural Network Model consists of \textbf{1 input layer, 2 hidden layers and 1 output layer}
+    \item The input data is in the form of a \textbf{JSON} file, where questions are categorized into tags like greetings, payments.
+    \item Each tag has predefined responses, which help chatbot respond to the question after classification.
+\end{tightemize}
+\sectionsep
+%
+%\Project{Image Classification}{https://github.com/chand45/Image-Classification-Using-CNN}
+%\descript{Convolutional Neural Networks (CNN), PyTorch, NumPy}
+%\begin{tightemize}
+   % \item Implemented image classification model on \textbf{Cifar10} dataset which has 6000 images of 10 categories. 
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+  %  \item The model is made of \textbf{2 convolutional layers} and \textbf{1 fully connected layer}. Kernel size used is 5x5.
+  %  \item After using \textbf{one hidden layer} and \textbf{ReLU} activation function on the output of fully connected layer, the probability of image belonging to the particular class is obtained.
+ %   \item Model is trained on 5000 images and tested on 1000 images. Accuracy obtained is \textbf{67\%}
+%\end{tightemize}
+%\sectionsep
+  
+\Project{Movie Review Classification}{https://github.com/chand45/Movie-Review-Classification}
+\descript{Natural Language Processing (NLP), NumPy}%\hfill 
+\begin{tightemize}
+    \item Implemented a \textbf{Simple Word Embedding Model (SWEM)} which performs \textbf{sentiment analysis} on the movie reviews.
+    \item Word embeddings are directly taken from the h5Py library of Python.
+    \item Number of examples in the dataset are 1411 which is divided into \textbf{1128 training samples} and  \textbf{283 test samples}
+    \item Accuracy of model on the test samples was \textbf{95\%}
+\end{tightemize}
+\sectionsep
+
+ 
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{resumeSkillList}
+    \singleItem{\textbf{Languages:}}{C++}
+    \\
+    \singleItem{\textbf{Core CS Fundamentals:}}{Problem-solving, Data Structures, Algorithms, Object Oriented Programming, Computer Networking, SQL,}
+    \\
+    \singleItem{\textbf{Other skills:}}{MS Office, Excel, Basic understanding of finance, Data Analysis, Data visualisation}
+    \\
+\end{resumeSkillList}
+
+ % A more concise alternate 
+% \begin{resumeSkillList}
+%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{resumeSkillList}
+\sectionsep
+%--------------------------------------------------------------
+%     Achievements and course works
+%--------------------------------------------------------------
+ \section{Hobbies and Interests}
+%\resumeHeading{Amazon}{Software Development Engineer Intern}{Toronto, ON}{May 2020 – Aug %2020}
+\begin{tightemize}
+    \item Active investor on stock market.
+    \item Watching news and staying up to date with the global events.
+    \item Playing Badminton, Cricket and Volleyball.
+\end{tightemize}
+\sectionsep
+%--------------------------------------------------------------
+%     Competitive Coding Profile.
+%--------------------------------------------------------------
+%\section{Competitive Coding Profile}
+%\begin{itemize}
+    %\item Solved over \textbf{1000} problems on LeetCode and GeeksforGeeks
+    %\item \href{https://auth.geeksforgeeks.org/user/chand17/practice/}{\underline{GeeksforGeeks}} 
+    %\item \href{https://leetcode.com/kanthreddygaddamchandra/}{\underline{LeetCode}}
+    %\item \href{https://www.hackerrank.com/chandu_stinsfire}{\underline{HackerRank}}
+    %\item \href{https://codeforces.com/profile/chand_stinsy}{\underline{Codeforces}}
+    %\item \href{https://leetcode.com/kanthreddygaddamchandra/}{\underline{LeetCode}} $\bullet$\href{https://auth.geeksforgeeks.org/user/chand17/practice/}{\underline{GeeksforGeeks}}  $\bullet$ \href{https://www.hackerrank.com/chandu_stinsfire}{\underline{HackerRank}}  $\bullet$  \href{https://codeforces.com/profile/chand_stinsy}{\underline{Codeforces}}
+    
+%\end{itemize}
+
+\end{document}
