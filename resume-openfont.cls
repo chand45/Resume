@@ -35,7 +35,7 @@
 \titleformat{\section}{%
 \color{headings}% Using comments to allow us to split the command across multiple line
 \scshape%
-\customLatoLight%
+\customLatoRegular%
 \fontsize{16pt}{24pt}%first number is size, second number is space between lines
 \selectfont%
 \raggedright%
@@ -131,7 +131,7 @@
 
 %--------------------------------------------------------------
 % Section separators command
-\newcommand{\sectionsep}[0]{\vspace{7pt}}
+\newcommand{\sectionsep}[0]{\vspace{8pt}}
 
 %--------------------------------------------------------------
 % Bullet Lists with fewer gaps command

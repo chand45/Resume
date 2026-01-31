@@ -131,6 +131,19 @@ Primary goal: keep resumes compiling with XeLaTeX and preserve template conventi
 - If a change affects multiple resumes, state which files were updated.
 - Default to ASCII text unless a non-ASCII character is essential (e.g., a proper noun).
 
+## Current Resume Decisions (Chandrakanth Reddy.tex)
+- Default target resume: `Chandrakanth Reddy.tex`.
+- Summary section removed to keep single-page layout unless explicitly requested.
+- Projects order: `Nurl` first, then `LLM Finetuning For Spam Detection`.
+- Work Experience bullets emphasize impact; keep failure-injection scale (10-15 injections, 500-1,000 nodes) and ~16 hours/drill savings; MCP server ~100 incidents/month.
+- Skills structured with Backend & APIs, Cloud & Infrastructure (Azure), Observability & Security, AI/ML, Core CS; keep ATS keywords (Kubernetes, OpenAPI/Swagger, JWT, Azure Service Bus, ARM, CI/CD, etc.).
+- Link styling in header must stay underlined for email/LinkedIn/GitHub.
+- Typography tweaks:
+  - Body font set to Lato Regular (for darker, more legible text).
+  - Section headers use Lato Regular (not Light) and are darker.
+  - `\sectionsep` increased to 8pt for breathing room.
+- Color palette (font-color.sty) is darker than default; titles remain darker than body.
+
 ## Troubleshooting Checklist
 - Build fails with fontspec error: confirm you are using XeLaTeX or LuaLaTeX.
 - Missing glyphs: verify the font files exist under `fonts/`.

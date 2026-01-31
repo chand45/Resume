@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1769893567.94304 "Chandrakanth Reddy.xdv" "Chandrakanth Reddy.pdf" "Chandrakanth Reddy" 1769893568.14136 0
-  "Chandrakanth Reddy.xdv" 1769893567.87428 34076 91ae0618ff741361ace7e4c669defecb "xelatex"
+["xdvipdfmx"] 1769894706.26762 "Chandrakanth Reddy.xdv" "Chandrakanth Reddy.pdf" "Chandrakanth Reddy" 1769894706.43155 0
+  "Chandrakanth Reddy.xdv" 1769894706.20412 33396 5bf63d270b385c66dfc345cfacdf2158 "xelatex"
   (generated)
   "Chandrakanth Reddy.pdf"
   (rewritten before read)
-["xelatex"] 1769893567.0617 "Chandrakanth Reddy.tex" "Chandrakanth Reddy.xdv" "Chandrakanth Reddy" 1769893568.14046 0
+["xelatex"] 1769894705.54229 "Chandrakanth Reddy.tex" "Chandrakanth Reddy.xdv" "Chandrakanth Reddy" 1769894706.43043 0
   "/etc/texmf/web2c/texmf.cnf" 1769885342.72808 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -95,13 +95,13 @@
   "/usr/share/texmf/tex/latex/tipa/t3enc.def" 1615504778 26483 c461a68c34040cb0d96c43e86c012a6d ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1769885392 9050227 e62126211ab5ed80636895fc24429f5f ""
-  "Chandrakanth Reddy.aux" 1769893567.87041 757 ae4a42ee65fa6ec9f1b82797c6c1ee38 "xelatex"
-  "Chandrakanth Reddy.out" 1769893567.87041 544 a93bdda89a026616258741e2bf628ec7 "xelatex"
-  "Chandrakanth Reddy.tex" 1769893554.73544 9438 7c74db5bb56b9d79915d50a321782ae9 ""
+  "Chandrakanth Reddy.aux" 1769894706.20412 757 ae4a42ee65fa6ec9f1b82797c6c1ee38 "xelatex"
+  "Chandrakanth Reddy.out" 1769894706.20412 544 a93bdda89a026616258741e2bf628ec7 "xelatex"
+  "Chandrakanth Reddy.tex" 1769894700.25928 9369 b11b408ba646897e44c767c56fa57428 ""
   "font-color.sty" 1769893238.79148 420 f8fa0b02ff538325d459134235f9cd72 ""
   "lato-font.sty" 1769893278.76978 2818 04a3ada33b087c68cdcbe6bfe0390bbb ""
   "raleway-font.sty" 1769880943.95107 2349 afd800725cc5b30b7a33bed5858d87d9 ""
-  "resume-openfont.cls" 1769880943.96007 4023 8fb8f6bf5f17aeb85d0a2ac85731115d ""
+  "resume-openfont.cls" 1769894602.90418 4026 7e78298bee0183058dfced43ea5ba836 ""
   (generated)
   "Chandrakanth Reddy.aux"
   "Chandrakanth Reddy.log"
